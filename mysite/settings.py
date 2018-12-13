@@ -25,7 +25,7 @@ SECRET_KEY = 'wabtm6u=meobkpo(sw^cbz^25yz71z#$u!i-innn$u^b4km73x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['acensors.pythonanywhere.com']
 
 
 # Application definition
@@ -123,4 +123,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CORS_ORIGIN_WHITELIST = 'http://alerzi88.github.io/'
+CORS_ORIGIN_WHITELIST = 'https://alerzi88.github.io/'
+
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
